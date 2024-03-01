@@ -46,8 +46,7 @@ INSTALL_REQUIRES = (
     'scikit-learn>=0.20.0',
     'scipy>=1.1.0',
     'seaborn>=0.9.0',
-    'six>=1.11.0',
-    'sklearn>=0.0'
+    'six>=1.11.0'
 )
 
 
