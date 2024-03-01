@@ -2,7 +2,7 @@ import os
 from glob import glob
 from setuptools import setup, find_packages
 import subprocess
-import imp
+import importlib
 
 from distutils.core import setup
 from distutils.command.clean import clean
@@ -164,10 +164,14 @@ def setup_package():
     )
 
 
+
+# At the beginning of the file, consider replacing `import imp` with `importlib` relevant code.
+
 def timer_setup():
     setup(
         name="matlabruntimeforpython",
-        version="R2017a",
+        # Example of converting 'R2017a' to a PEP 440 compliant version
+        version="2017.1.0",
         description='A module to call MATLAB from Python',
         author='MathWorks',
         url='http://www.mathworks.com/',
